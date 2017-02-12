@@ -71,6 +71,59 @@ nav ul li a {
   left: -5%;
 }
 
+.bg {
+  float: left;
+  max-width: 31%;
+  margin: .5%;
+  position: relative;
+}
+
+.bg img {
+  width: 100%;
+  height: 100%;
+  border-radius: 3px;
+  transition: all 300ms ease-in-out;
+}
+
+.bg .overlay {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+}
+
+.overlay {
+  text-align: center;
+}
+
+.overlay {
+  color: #fff;
+  opacity: 0;
+  transition: all 300ms ease-in-out;
+}
+
+.overlay h2 {
+  font-family: helvetica;
+  font-size: 24px;
+  weight: 400;
+}
+
+.overlay p {
+  font-family: helvetica;
+  font-size: 16px;
+  weight: 200;
+}
+
+.bg:hover img {
+  filter: blur(2px);
+}
+
+.bg:hover .overlay {
+  opacity: 1;
+  /*display: block;*/
+}
+
 .clearfix {
   height: 0px;
   clear: both;
