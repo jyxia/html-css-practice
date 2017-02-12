@@ -1,0 +1,191 @@
+header {
+  width: 100%;
+  height: 88px;
+}
+
+header nav {
+  float: right;
+}
+
+header img {
+  float: left;
+}
+
+nav ul {
+  margin: 30px auto;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-left: 20px;
+  list-style: none;
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-family: arial, helvetia;
+  font-size: 20px;
+  font-weight: 10;
+  color: #333;
+}
+
+.wrapper {
+  width: 960px;
+  /* center the element */
+  margin: 0 auto;
+}
+
+.index-intro {
+  width: 100%;
+  padding: 20px;
+}
+
+.index-intro h2 {
+  font-family: helvetica;
+  font-weight: 400;
+  font-size: 24px;
+  text-align: center;
+  padding-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.index-intro p {
+  font-family: helvetica;
+  font-weight: 200;
+  font-size: 16px;
+  text-align: center;
+  /* having spacing between lines must greater than font-size */
+  line-height: 22px;
+}
+
+.index-news {
+  width: 100%;
+  padding: 80px 0;
+  background-color: #ccc;
+  /* add overflow hidden to clear float (no height) issue  */
+  overflow: hidden;
+}
+
+/* only change inside element when hover */
+.index-news article:hover p {
+  color: red;
+  transition: all 1s ease-in-out 200ms;
+}
+
+.index-news article {
+  width: 18%;
+  margin: 0 1%;
+  float: left;
+}
+
+.news-img {
+  width: 100%;
+  height: 100px;
+  background-image: url('../images/dog.png');
+  background-repeat: no-repeat;
+  /*
+  transition-property: all;
+  transition-duration: 1s;
+  transition-timing-function: ease-in-out;
+  transition-delay: 200ms;
+  */
+  transition: all 1s ease-in-out 200ms;
+  -webkit-transition: all 1s ease-in-out 200ms;
+  -moz-transition: all 1s ease-in-out 200ms;
+  -o-transition: all 1s ease-in-out 200ms;
+}
+
+.index-news article:hover .news-img {
+  background-image: url('../images/dog-hover.png');
+}
+
+.index-news h3 {
+  font-family: helvetica;
+  font-weight: 400;
+  font-size: 18px;
+  text-align: center;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  text-transform: uppercase;
+  color: #000;
+}
+
+.index-news p {
+  font-family: helvetica;
+  font-weight: 300;
+  font-size: 14px;
+  text-align: center;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  color: #000;
+}
+
+/* form */
+.form-box {
+  padding: 20px;
+  width: 100%;
+  background-color: #fff;
+}
+
+.form-box form input {
+  width: 40%;
+  height: 30px;
+  margin-bottom: 5px;
+  padding-left: 5px;
+  border: 1px solid #ccc;
+}
+
+.form-box form input[type='radio'] {
+  width: 1%;
+  height: 10px;
+  margin-bottom: 5px;
+  padding: 0 0.5%;
+  border: 1px solid #ccc;
+}
+
+.form-box button {
+  width: 80px;
+  height: 30px;
+  border: none;
+  color: white;
+  background-color: orange;
+  text-transform: uppercase;
+}
+
+/* footer */
+footer {
+  width: 100%;
+  background-color: green;
+  padding: 10px 0px;
+}
+
+footer nav ul {
+  margin: 0px;
+}
+
+footer nav ul li {
+  display: inline-block;
+  margin-left: 20px;
+  list-style: none;
+}
+
+footer ul li a {
+  text-decoration: none;
+  font-family: helvetica;
+  font-size: 12px;
+  font-weight: 200;
+  color: #fff;
+}
+
+
+@media only screen and (max-width: 768px) and (orientation: landscape) {
+  .index-intro h2 {
+    font-weight: 700;
+    font-size: 34px;
+  }
+
+  .index-intro p {
+    font-weight: 200;
+    font-size: 26px;
+  }
+}
