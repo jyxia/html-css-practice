@@ -144,8 +144,6 @@ function calender(container) {
     updateDays(firstDate, lastDate);
   }
 
-
-
   function createDOM(selector) {
     return document.createElement(selector);
   }
