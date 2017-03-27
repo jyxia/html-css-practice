@@ -1,0 +1,37 @@
+.calendar {
+  width: 200px;
+  padding: 10px;
+}
+
+.calendar header {
+  overflow: hidden;
+}
+
+.calendar header button {
+  float: left;
+  width: 10%;
+  vertical-align: middle;
+  margin: 5px;
+  display: inline-block;
+}
+
+.calendar .calendar-title {
+  float: left;
+  display: inline-block;
+  width: 70%;
+}
+
+.calendar .calendar-title h3 {
+  text-align: center;
+  margin: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.calendar table {
+  margin: 10px auto;
+}
+
+.calendar table td {
+  padding: 2px;
+}
